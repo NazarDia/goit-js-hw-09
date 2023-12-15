@@ -10,3 +10,6 @@
   width: 360px;
   height: 200px;
 }
+.overlay-color {
+  background: rgba(46, 47, 66, 0.8);
+}

@@ -82,3 +82,17 @@ const elements = images
   .join('');
 
 galleryContainer.insertAdjacentHTML('afterbegin', elements);
+
+import SimpleLightbox from 'simplelightbox';
+
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
+import '../css/01-gallery.css';
+
+const gallery = new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionDelay: 250,
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+  className: 'overlay-color',
+});
